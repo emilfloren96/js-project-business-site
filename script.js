@@ -25,10 +25,10 @@ button.addEventListener("click", function () {
 });
 
 const images = [
-    "images/home.png",
-    "images/home1.png",
-    "images/home2.png", 
-    "images/home3.png"
+  "images/home.png",
+  "images/home1.png",
+  "images/home2.png", 
+  "images/home3.png"
 ];
 
 let currentIndex = 0;
@@ -41,13 +41,25 @@ function updateBackground() {
   card.style.backgroundImage = `url('${images[currentIndex]}')`;
 }
 
+prevBtn.addEventListener("click", showPrevImage);
+nextBtn.addEventListener("click", showNextImage);
 
-prevBtn.addEventListener("click", () => {
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowLeft") {
+    showPrevImage();
+  } else if (e.key === "ArrowRight") {
+    showNextImage();
+  }
+});
+
+function showPrevImage() {
   currentIndex = (currentIndex - 1 + images.length) % images.length;
   updateBackground();
-});
+}
 
-nextBtn.addEventListener("click", () => {
+function showNextImage() {
   currentIndex = (currentIndex + 1) % images.length;
   updateBackground();
-});
+}
+
+updateBackground();
