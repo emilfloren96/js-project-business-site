@@ -1,3 +1,2 @@
-# js-project-business-site
-  path = js-project-business-site
-  url = https://github.com/ditt-användarnamn/js-project-business-site.git
+https://precious-phoenix-9a27e1.netlify.app/
+
