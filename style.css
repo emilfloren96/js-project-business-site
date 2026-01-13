@@ -4,7 +4,7 @@ html {
 
 body {
     background-color: #daddbe;
-    background-image: url(images/oak-tree.jpg);
+    background-image: url(/images/oak-tree.jpg);
     opacity: 95%;
     background-attachment: fixed;
     background-size: auto;
@@ -144,20 +144,20 @@ body {
 
 .card-button-home {
     position: relative;
-    background-image: url(images/home.png);
+    background-image: url(/images/home.png);
     background-size: cover;
     background-position: center;
     transition: opacity 0.3s ease-in-out;
 }
 
 .card-button-tent {
-    background-image: url(images/glamping.png);
+    background-image: url(/images/glamping.png);
     background-size: cover;
     background-position: center;
 }
 
 .card-button-italy {
-    background-image: url(images/italy.jpg);
+    background-image: url(/images/italy.jpg);
     background-size: cover;
     background-position: center;
 }
