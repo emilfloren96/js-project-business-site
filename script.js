@@ -38,10 +38,10 @@ button.addEventListener("click", function () {
 });
 
 const images = [
-  "/images/home.png",
-  "/images/home1.png",
-  "/images/home2.png",
-  "/images/home3.png"
+  "./images/home.png",
+  "./images/home1.png",
+  "./images/home2.png",
+  "./images/home3.png"
 ];
 
 let currentIndex = 0;
