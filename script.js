@@ -1,3 +1,8 @@
+import homeImg from './images/home.png';
+import home1Img from './images/home1.png';
+import home2Img from './images/home2.png';
+import home3Img from './images/home3.png';
+
 const hamburger = document.getElementById('hamburger');
 const navUl = document.getElementById('navUl');
 const button = document.getElementById("button-navbar-rules");
@@ -38,10 +43,10 @@ button.addEventListener("click", function () {
 });
 
 const images = [
-  "./images/home.png",
-  "./images/home1.png",
-  "./images/home2.png",
-  "./images/home3.png"
+  homeImg,
+  home1Img,
+  home2Img,
+  home3Img
 ];
 
 let currentIndex = 0;
